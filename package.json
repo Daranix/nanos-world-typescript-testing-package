@@ -1,0 +1,14 @@
+{
+  "name": "typescript-base-package",
+  "version": "1.0.0",
+  "description": "Typescript base package with nanos typings",
+  "scripts": {
+    "build": "tstl",
+    "build:watch": "tstl --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript-to-lua": "^0.32.2"
+  }
+}
