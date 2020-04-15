@@ -1,3 +1,4 @@
+/** @customConstructor Color */
 declare class Color {
 
     R: number;

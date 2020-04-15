@@ -3,9 +3,9 @@
 /// <reference path="has-model.d.ts" />
 /// <reference path="collisionable.d.ts" />
 
-
-
-declare class Item extends Spawneable implements Collisionable {
+/** @customConstructor Item */
+declare class Item implements Collisionable, HasModel {
+    constructor(position: Vector, rotation: Rotator, asset: string);
     SetCollision(collisionType: CollisionType): void;
     GetCollision(): CollisionType;
     GetAssetName(): string;

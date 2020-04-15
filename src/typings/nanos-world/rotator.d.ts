@@ -1,3 +1,4 @@
+/** @customConstructor Rotator */
 declare class Rotator {
 
     Pitch: number;

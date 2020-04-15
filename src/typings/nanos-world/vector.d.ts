@@ -1,3 +1,4 @@
+/** @customConstructor Vector */
 declare class Vector {
     
     X: number;

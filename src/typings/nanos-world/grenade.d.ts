@@ -1,7 +1,7 @@
 /// <reference path="item.d.ts" />
 
+/** @customConstructor Grenade */
 declare class Grenade extends Item {
-    
     BaseDamage: number;
     MinimunDamage: number;
     DamageInnerRadius: number;

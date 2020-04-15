@@ -2,8 +2,10 @@
 /// <reference path="has-model.d.ts" />
 /// <reference path="collisionable.d.ts" />
 
-
-declare class Prop extends Spawneable implements Collisionable {
+/** @customConstructor Prop */
+declare class Prop implements Collisionable, HasModel {
+    constructor(position: Vector, rotation: Rotator, asset: string);
+    GetAssetName(): string;
     SetCollision(collisionType: CollisionType): void;
     GetCollision(): CollisionType;
 }
