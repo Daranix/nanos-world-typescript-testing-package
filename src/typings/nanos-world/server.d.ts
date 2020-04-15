@@ -1,3 +1,6 @@
+/// <reference path="servereventtype.d.ts" />
+
+
 declare class Server {
-    static on(eventType: 'Start' | 'Stop' | 'Tick', action: () => void): void;
+    static on(eventType: ServerEventType, action: () => void): void;
 }

@@ -79,7 +79,7 @@ const NanosTestingMap = [
     new Weapon(new Vector(-10167, -1895, 101), new Rotator(0, 0, -90), "/Game/NanosWorld/Core/Weapons/SMGs/BP_Weapon_SMG11.BP_Weapon_SMG11_C"),
 ];
 
-Server.on('Start', () => {
+Server.on(ServerEventType.START, () => {
     console.log("Server started !! ");
 });
 

@@ -21,9 +21,9 @@ declare class Character extends Entity {
     EnterVehicle(vehicle: Vehicle, seat: number): void;
     SetMovementEnabled(status: boolean): void;
     IsMovementEnabled(): boolean;
-    SetMorphTarget(id: number, value: number): void;
-    SetScalarParameter(id: number, value: number): void;
-    SetVectorParameter(id: number, value: number): void;
+    SetMorphTarget(id: CharacterMorphTarget, value: number): void;
+    SetScalarParameter(id: CharacterScalarParameter, value: number): void;
+    SetVectorParameter(id: CharacterVectorParameter, value: number): void;
     GetMorphTarget(): number;
     GetScalarParameter(): number;
     GetVectorParameter(): number;
