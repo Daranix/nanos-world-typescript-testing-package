@@ -5,8 +5,7 @@
 
 
 
-declare class Item extends Entity implements HasModel, Collisionable {
-    GetModelName(): string;
+declare class Item extends Spawneable implements Collisionable {
     SetCollision(collisionType: CollisionType): void;
     GetCollision(): CollisionType;
     GetAssetName(): string;

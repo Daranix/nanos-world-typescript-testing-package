@@ -1,3 +1,3 @@
 declare interface HasModel {
-    GetModelName(): string;
+    GetAssetName(): string;
 }

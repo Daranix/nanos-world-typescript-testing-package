@@ -3,8 +3,7 @@
 /// <reference path="collisionable.d.ts" />
 
 
-declare class Prop extends Entity implements HasModel, Collisionable {
+declare class Prop extends Spawneable implements Collisionable {
     SetCollision(collisionType: CollisionType): void;
     GetCollision(): CollisionType;
-    GetModelName(): string;
 }

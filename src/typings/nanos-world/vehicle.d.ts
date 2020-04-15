@@ -4,8 +4,7 @@
 
 
 
-declare class Vehicle extends Entity implements HasModel {
-    GetModelName(): string;
+declare class Vehicle extends Spawneable {
     SetBodyColor(color: Color): void;
     SetBodyRoughness(value: number): void;
     GetBodyRoughness(): number;
