@@ -1,10 +1,10 @@
 /// <reference path="entity.d.ts" />
-/// <reference path="has-asset.d.ts" />
+/// <reference path="has-model.d.ts" />
 /// <reference path="collisionable.d.ts" />
 
 
-declare class Prop extends Entity implements HasAsset, Collisionable {
+declare class Prop extends Entity implements HasModel, Collisionable {
     SetCollision(collisionType: CollisionType): void;
     GetCollision(): CollisionType;
-    GetAssetName(): string;
+    GetModelName(): string;
 }

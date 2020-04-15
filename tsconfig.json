@@ -2,10 +2,10 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext", "DOM"],
-    "outDir": "dist/",
+    "outDir": "",
     "rootDir": "./src",
     "typeRoots": [
-      "./src/typings"
+      "./src/typings/nanos-world"
     ],
     "types": [
       // "lua-types/5.3"
@@ -15,5 +15,6 @@
   "tstl": {
     "luaTarget": "5.3",
     "sourceMapTraceback": true,
+    "luaLibImport": "require",
   }
 }

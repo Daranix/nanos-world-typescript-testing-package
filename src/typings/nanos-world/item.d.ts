@@ -1,11 +1,12 @@
 /// <reference path="entity.d.ts" />
 /// <reference path="itemeventtype.d.ts" />
-/// <reference path="has-asset.d.ts" />
+/// <reference path="has-model.d.ts" />
 /// <reference path="collisionable.d.ts" />
 
 
 
-declare class Item extends Entity implements HasAsset, Collisionable {
+declare class Item extends Entity implements HasModel, Collisionable {
+    GetModelName(): string;
     SetCollision(collisionType: CollisionType): void;
     GetCollision(): CollisionType;
     GetAssetName(): string;
