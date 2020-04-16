@@ -1,4 +1,4 @@
-declare enum ItemEventType {
+declare const enum ItemEventType {
     PICKUP = 'PickUp',
     DROP = 'Drop'
 }

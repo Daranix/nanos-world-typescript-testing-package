@@ -1,4 +1,4 @@
-declare enum EntityEventType {
+declare const enum EntityEventType {
     SPAWN = 'Spawn',
     DESTROY = 'Destroy'
 }

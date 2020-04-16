@@ -1,4 +1,4 @@
-declare enum CharacterScalarParameter {
+declare const enum CharacterScalarParameter {
     BaseColorPower = 0,
     Muscular
 }

@@ -1,4 +1,4 @@
-declare enum GrenadeEventType {
+declare const enum GrenadeEventType {
     EXPLODE = 'Explode',
     THROW = 'Throw'
 }

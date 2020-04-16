@@ -1,4 +1,4 @@
-declare enum CharacterMorphTarget {
+declare const enum CharacterMorphTarget {
     NOSE1 = 0,
     NOSE2,
     BROWS,

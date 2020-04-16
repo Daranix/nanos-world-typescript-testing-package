@@ -1,3 +1,3 @@
-declare enum WeaponEventType {
+declare const enum WeaponEventType {
     FIRE = 'Fire'
 }

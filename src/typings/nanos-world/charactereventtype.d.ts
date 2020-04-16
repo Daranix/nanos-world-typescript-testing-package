@@ -1,4 +1,4 @@
-declare enum CharacterEventType {
+declare const enum CharacterEventType {
     PICKUPITEM = 'PickUpItem',
     DROPITEM = 'DropItem',
     ENTERVEHICLE = 'EnterVehicle',

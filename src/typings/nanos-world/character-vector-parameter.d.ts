@@ -1,4 +1,4 @@
-declare enum CharacterVectorParameter {
+declare const enum CharacterVectorParameter {
     SkinTone,
     LipstickTint,
     BrowsTint,
