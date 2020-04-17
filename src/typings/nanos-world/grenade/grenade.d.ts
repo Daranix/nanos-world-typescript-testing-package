@@ -1,4 +1,4 @@
-/// <reference path="item.d.ts" />
+/// <reference path="../item/item.d.ts" />
 
 /** @customConstructor Grenade */
 declare class Grenade extends Item {

@@ -1,7 +1,7 @@
-/// <reference path="entity.d.ts" />
+/// <reference path="../entity/entity.d.ts" />
 /// <reference path="itemeventtype.d.ts" />
-/// <reference path="has-model.d.ts" />
-/// <reference path="collisionable.d.ts" />
+/// <reference path="../misc/has-model.d.ts" />
+/// <reference path="../misc/collision/collisionable.d.ts" />
 
 /** @customConstructor Item */
 declare class Item implements Collisionable, HasModel {

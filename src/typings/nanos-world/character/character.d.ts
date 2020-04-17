@@ -1,7 +1,7 @@
-/// <reference path="entity.d.ts" />
+/// <reference path="../entity/entity.d.ts" />
 /// <reference path="charactereventtype.d.ts" />
-/// <reference path="item.d.ts" />
-/// <reference path="weapon.d.ts" />
+/// <reference path="../item/item.d.ts" />
+/// <reference path="../weapon/weapon.d.ts" />
 
 
 declare class Character extends Entity {

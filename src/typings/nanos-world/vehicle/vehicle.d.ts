@@ -1,6 +1,6 @@
-/// <reference path="color.d.ts" />
-/// <reference path="entity.d.ts" />
-/// <reference path="has-model.d.ts" />
+/// <reference path="../general/color.d.ts" />
+/// <reference path="../entity/entity.d.ts" />
+/// <reference path="../misc/has-model.d.ts" />
 
 /** @customConstructor Vehicle */
 declare class Vehicle implements HasModel {

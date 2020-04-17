@@ -1,5 +1,5 @@
 
-/// <reference path="entity.d.ts" />
+/// <reference path="../entity/entity.d.ts" />
 
 declare class Player extends Entity {
     GetPing(): number;

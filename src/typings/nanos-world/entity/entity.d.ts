@@ -1,7 +1,7 @@
 /// <reference path="entityeventtype.d.ts" />
-/// <reference path="rotable.d.ts" />
-/// <reference path="localizable.d.ts" />
-/// <reference path="vector.d.ts" />
+/// <reference path="../misc/rotable.d.ts" />
+/// <reference path="../misc/localizable.d.ts" />
+/// <reference path="../general/vector.d.ts" />
 
 
 
