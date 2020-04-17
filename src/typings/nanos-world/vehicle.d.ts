@@ -12,4 +12,6 @@ declare class Vehicle implements HasModel {
     SetLightColor(color: Color): void;
     GetPassengers(): number;
     Horn(status: boolean): void;
+    GetPassenger(passenger: number): Character;
+    GetPassengers(): Character[];
 }

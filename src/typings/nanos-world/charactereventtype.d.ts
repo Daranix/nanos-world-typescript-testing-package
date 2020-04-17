@@ -5,5 +5,7 @@ declare const enum CharacterEventType {
     LEAVEVEHICLE = 'LeaveVehicle',
     RESPAWN = 'Respawn',
     DEATH = 'Death',
-    TAKEDAMAGE = 'TakeDamage'
+    TAKEDAMAGE = 'TakeDamage',
+    POSSESED = 'Possessed',
+    UNPOSSESSED = 'UnPossessed'
 }

@@ -27,6 +27,8 @@ declare class Character extends Entity {
     GetMorphTarget(): number;
     GetScalarParameter(): number;
     GetVectorParameter(): number;
+    GetPlayer(): Player;
+    GetVehicle(): Vehicle;
 
     static on(eventType: EntityEventType | CharacterEventType | WeaponEventType, event: (entity: Entity) => void): void
 
