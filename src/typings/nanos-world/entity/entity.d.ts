@@ -6,7 +6,7 @@
 
 
 
-
+/** @noSelfInFile */
 declare class Entity implements Rotable, Localizable {
     GetLocation(): Vector;
     SetLocation(vector: Vector): void;

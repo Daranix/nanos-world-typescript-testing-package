@@ -1,6 +1,9 @@
 /// <reference path="../item/item.d.ts" />
 
-/** @customConstructor Grenade */
+/** 
+ * @customConstructor Grenade 
+ * @noSelfInFile
+ * */
 declare class Grenade extends Item {
     BaseDamage: number;
     MinimunDamage: number;

@@ -3,7 +3,11 @@
 /// <reference path="../misc/has-model.d.ts" />
 /// <reference path="../misc/collision/collisionable.d.ts" />
 
-/** @customConstructor Item */
+/** 
+ * @customConstructor Item 
+ * @noSelfInFile
+ * 
+*/
 declare class Item implements Collisionable, HasModel {
     constructor(position: Vector, rotation: Rotator, asset: string);
     SetCollision(collisionType: CollisionType): void;

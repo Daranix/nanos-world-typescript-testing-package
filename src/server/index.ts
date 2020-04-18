@@ -79,6 +79,44 @@ const NanosTestingMap = [
     new Weapon(new Vector(-10167, -1895, 101), new Rotator(0, 0, -90), "/Game/NanosWorld/Core/Weapons/SMGs/BP_Weapon_SMG11.BP_Weapon_SMG11_C"),
 ];
 
+const startLocations = [
+    new Vector(-4701.000000, 7058.000000, 236.000000),
+    new Vector(7065.000000, 5516.000000, 192.000000),
+    new Vector(4084.000000, 8175.000000, 238.000046),
+    new Vector(-4661.070801, -688.318481, 295.228271),
+    new Vector(9349.953125, -776.581421, 215.060547),
+    new Vector(6221.000000, -7602.000000, 197.000000),
+    new Vector(344.223877, -4713.804199, 517.179199),
+    new Vector(-2352.433594, -6579.508789, 313.297119),
+    new Vector(-7831.000000, -7635.000000, 197.000000),
+    new Vector(-9481.000000, -2884.350830, 185.215271),
+    new Vector(-8014.036621, -754.221375, 394.598022),
+    new Vector(-9400.706055, 3869.706299, 186.855911),
+    new Vector(-5850.000000, 8164.000000, 222.000046),
+    new Vector(-2050.000000, 6654.000000, 228.000000),
+    new Vector(-1207.603516, 5056.930176, 235.285980),
+    new Vector(3760.009277, 10620.053711, 119.038712),
+    new Vector(3143.985352, 8324.702148, 248.355957),
+    new Vector(6910.936035, -1799.466309, 267.055115),
+    new Vector(1569.594360, -10662.000000, 216.248596),
+    new Vector(-4014.836670, -4764.884766, 713.900269),
+]
+
 Server.on(ServerEventType.START, () => {
     console.log("Server started !! ");
+});
+
+Player.on(EntityEventType.SPAWN, (player) => {
+    const character = new Character();
+    player.Possess(character);
+});
+Character.on(CharacterEventType.RESPAWN, (character) => {
+    const location = startLocations[Math.floor(Math.random() * (startLocations.length - 0)) + 0];
+    character.SetInitialLocation(location);
+});
+
+Player.on(PlayerEventType.UNPOSSESS, (player, character, bIsPlayerDisconnecting) => {
+    if(bIsPlayerDisconnecting) {
+        character.Destroy();
+    }
 });

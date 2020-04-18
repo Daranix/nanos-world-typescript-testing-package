@@ -1,7 +1,11 @@
 /// <reference path="../item/item.d.ts" />
 /// <reference path="weaponeventtype.d.ts" />
 
-/** @customConstructor Weapon */
+/** 
+ * @customConstructor Weapon 
+ * @noSelfInFile
+ * */
+
 declare class Weapon extends Item {
     
     BaseDamage: number;

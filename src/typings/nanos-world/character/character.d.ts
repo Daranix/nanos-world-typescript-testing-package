@@ -4,9 +4,14 @@
 /// <reference path="../weapon/weapon.d.ts" />
 
 
+/** @customConstructor Character 
+ *  @noSelfInFile
+*/
 declare class Character extends Entity {
 
     Health: number;
+
+    constructor();
 
     PickUpWeapon(weapon: Weapon): void;
     PickUpGrenade(grenade: Grenade): void;
@@ -29,7 +34,8 @@ declare class Character extends Entity {
     GetVectorParameter(): number;
     GetPlayer(): Player;
     GetVehicle(): Vehicle;
+    SetInitialLocation(position: Vector): void;
 
-    static on(eventType: EntityEventType | CharacterEventType | WeaponEventType, event: (entity: Entity) => void): void
+    static on(eventType: EntityEventType | CharacterEventType | WeaponEventType, event: (entity: Character) => void): void
 
 }
