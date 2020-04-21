@@ -4,11 +4,9 @@
     "lib": ["esnext", "DOM"],
     "outDir": "",
     "rootDir": "./src",
-    "typeRoots": [
-      "./src/typings/nanos-world"
-    ],
     "types": [
       // "lua-types/5.3"
+      "./src/typings/nanos-world"
     ],
     "strict": true
   },

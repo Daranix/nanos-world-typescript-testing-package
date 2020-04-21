@@ -37,5 +37,6 @@ declare class Character extends Entity {
     SetInitialLocation(position: Vector): void;
 
     static on(eventType: EntityEventType | CharacterEventType | WeaponEventType, event: (entity: Character) => void): void
+    on(eventType: EntityEventType | CharacterEventType | WeaponEventType, event: () => void): void
 
 }

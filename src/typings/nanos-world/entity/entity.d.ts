@@ -13,6 +13,9 @@ declare class Entity implements Rotable, Localizable {
     GetRotation(): Rotator;
     SetRotation(rotation: Rotator): void;
     Destroy(): void;
+    SetInitialLocation(vector: Vector): void;
+    GetInitialLocation(): Vector;
 
     static on(eventType: EntityEventType, event: (entity: Entity) => void): void
+    on(eventType: EntityEventType, event: () => void): void;
 }

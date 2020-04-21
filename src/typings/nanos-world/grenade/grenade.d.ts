@@ -11,4 +11,6 @@ declare class Grenade extends Item {
     DamageFalloff: number;
     TimeToExplode: number;
     static on(eventType: ItemEventType | EntityEventType | GrenadeEventType, action: (grenade: Grenade, character: Character) => void): void;
+    on(eventType: ItemEventType | EntityEventType | GrenadeEventType, action: (character: Character) => void): void;
+
 }

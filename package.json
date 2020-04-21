@@ -4,11 +4,13 @@
   "description": "Typescript base package with nanos typings",
   "scripts": {
     "build": "tstl",
-    "build:watch": "tstl --watch"
+    "build:watch": "tstl --watch",
+    "generate:docs": "typedoc --options ./typedoc.json"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "typedoc": "^0.17.4",
     "typescript-to-lua": "^0.32.2"
   }
 }

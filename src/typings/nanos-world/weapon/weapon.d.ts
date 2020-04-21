@@ -17,6 +17,4 @@ declare class Weapon extends Item {
     SetAmmoBag(value: number): void;
 
     static on(eventType: ItemEventType | EntityEventType | WeaponEventType, event: (item: Item, character: Character) => void): void;
-    
-
 }
