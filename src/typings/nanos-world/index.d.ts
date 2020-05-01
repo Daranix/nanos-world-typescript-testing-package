@@ -9,3 +9,4 @@ import './prop';
 import './server';
 import './vehicle';
 import './weapon';
+import './package';

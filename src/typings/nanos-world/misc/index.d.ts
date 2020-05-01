@@ -1,4 +1,4 @@
 import './collision';
-import './has-model';
+import './pickable';
 import './localizable';
 import './rotable';
