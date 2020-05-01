@@ -3,3 +3,8 @@ import './character-scalar-params';
 import './character-vector-parameter';
 import './character';
 import './charactereventtype';
+import './aimmode';
+import './fallingmode';
+import './stancemode';
+import './swimmingmode';
+import './viewmode';
