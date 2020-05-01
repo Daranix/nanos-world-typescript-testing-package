@@ -6,10 +6,11 @@
 
 
 declare namespace NanosWorld {
-    function GetPlayers(): Player[];
-    function GetVehicles(): Vehicle[];
-    function GetProps(): Prop[];
-    function GetWeapons(): Weapon[];
+    function GetCharacters(): Character[];
     function GetGrenades(): Grenade[];
     function GetItems(): Item[];
+    function GetPlayers(): Player[];
+    function GetProps(): Prop[];
+    function GetVehicles(): Vehicle[];
+    function GetWeapons(): Weapon[];
 }

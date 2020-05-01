@@ -1,4 +1,4 @@
-/// <reference path="../general/rotator.d.ts" />
+/// <reference path="../utility/rotator.d.ts" />
 
 
 declare interface Rotable {

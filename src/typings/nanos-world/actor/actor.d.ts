@@ -1,7 +1,7 @@
 /// <reference path="actoreventtype.d.ts" />
 /// <reference path="../misc/rotable.d.ts" />
 /// <reference path="../misc/localizable.d.ts" />
-/// <reference path="../general/vector.d.ts" />
+/// <reference path="../utility/vector.d.ts" />
 
 
 /** @noSelfInFile */

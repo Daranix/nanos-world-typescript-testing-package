@@ -11,3 +11,7 @@ This package is a example about how you can do scripting in nanos world using [t
 	 - **Windows**: `../../lua` (If de folder doesn't exists just create  it)
 	 - **Linux** `../../` (Root folder of the nanos world server)
 5. Run the server :)
+
+## Issues
+
+Please report any issue you find here on [github](https://github.com/Daranix/nanos-world-typescript/issues)

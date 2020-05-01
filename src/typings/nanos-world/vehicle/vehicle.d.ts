@@ -1,4 +1,4 @@
-/// <reference path="../general/color.d.ts" />
+/// <reference path="../utility/color.d.ts" />
 /// <reference path="../actor/actor.d.ts" />
 /// <reference path="../misc/pickable.ts" />
 
