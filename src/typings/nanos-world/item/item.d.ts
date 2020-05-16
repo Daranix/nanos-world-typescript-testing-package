@@ -1,6 +1,6 @@
 /// <reference path="../actor/actor.d.ts" />
 /// <reference path="itemeventtype.d.ts" />
-/// <reference path="../misc/pickable.ts" />
+/// <reference path="../misc/pickable.d.ts" />
 /// <reference path="../misc/collision/collisionable.d.ts" />
 
 /** 

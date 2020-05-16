@@ -8,11 +8,12 @@
       // "lua-types/5.3"
       "./src/typings/nanos-world"
     ],
+    "noImplicitAny": true,
     "strict": true
   },
   "tstl": {
     "luaTarget": "5.3",
-    "sourceMapTraceback": true,
+    "sourceMapTraceback": false,
     "luaLibImport": "require",
   }
 }

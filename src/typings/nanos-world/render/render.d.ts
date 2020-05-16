@@ -1,3 +1,4 @@
+/** @noSelf */
 declare namespace Render {
     function AddLine(id: number, startPosition: Vector2D, endPosition: Vector2D, thickness: number, color: Color): void;
     function AddBox(id: number, startPosition: Vector2D, endPosition: Vector2D, thickness: number, color: Color): void;
@@ -18,8 +19,9 @@ declare namespace Render {
         enableOutline: boolean,
         outLineColor: Color
     ): void;
+    function StrLen(text: string, fontType: FontType, fontSize: number): Vector2D;
 
-    function Project(location3d: Vector): Vector;
+    function Project(location3d: Vector): Vector2D;
     function ClearItems(id: number): void;
 
 }

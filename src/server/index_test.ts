@@ -20,11 +20,11 @@ Server.on(ServerEventType.START, () => {
     console.log("Server started !! ");
 });
 
-Player.on(EntityEventType.SPAWN, (player) => {
+Player.on(PlayerEventType.Spawn, (player) => {
     const character = new Character();
     player.Possess(character);
 });
-Character.on(CharacterEventType.RESPAWN, (character) => {
+Character.on(CharacterEventType.Respawn, (character) => {
     const location = new Vector(0, 0, 0);
     character.SetInitialLocation(location);
 });
