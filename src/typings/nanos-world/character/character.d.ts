@@ -15,16 +15,12 @@ declare class Character extends Actor {
     constructor();
     constructor(location: Vector, rotator: Rotator, collisionType?: CollisionType, gravityEnabled?: boolean, maxHealth?: number);
 
-    PickUpWeapon(weapon: Weapon): void;
-    PickUpGrenade(grenade: Grenade): void;
-    PickUpItem(item: Item): void;
+    PickUp(element: Weapon | Grenade | Item): void;
     Drop(): void;
     GrabProp(prop: Prop): void;
     UnGranProp(): void;
     GetGrabbedProp(): Prop;
-    GetItem(): Item;
-    GetWeapon(): Weapon;
-    GetGrenade(): Grenade;
+    GetPicked(): Weapon | Grenade | Item;
     GetVehicle(): Vehicle;
     GetPlayer(): Player;
     SetRagdollMode(status: boolean): void;
@@ -45,7 +41,7 @@ declare class Character extends Actor {
 
     // Static
     static on(eventType: ActorEventType | CharacterEventType, event: (char: Character) => void): void;
-    static on(eventType: CharacterEventType.PickUpItem | CharacterEventType.DropItem, event: (char: Character, object: Item | Grenade | Weapon) => void): void;
+    static on(eventType: CharacterEventType.PickUp | CharacterEventType.Drop, event: (char: Character, object: Item | Grenade | Weapon) => void): void;
     static on(eventType: CharacterEventType.GrabProp | CharacterEventType.UnGrabProp, event: (char: Character, prop: Prop) => void): void;
     static on(eventType: CharacterEventType.EnterVehicle | CharacterEventType.LeaveVehicle, event: (char: Character, vehicle: Vehicle) => void): void;
     static on(eventType: CharacterEventType.TakeDamage, event: (char: Character, damage: number, bone: string) => void): void;
@@ -61,7 +57,7 @@ declare class Character extends Actor {
 
     // Self
     static on(eventType: ActorEventType | CharacterEventType, event: () => void): void;
-    static on(eventType: CharacterEventType.PickUpItem | CharacterEventType.DropItem, event: (object: Item | Grenade | Weapon) => void): void;
+    static on(eventType: CharacterEventType.PickUp | CharacterEventType.Drop, event: (object: Item | Grenade | Weapon) => void): void;
     static on(eventType: CharacterEventType.GrabProp | CharacterEventType.UnGrabProp, event: (prop: Prop) => void): void;
     static on(eventType: CharacterEventType.EnterVehicle | CharacterEventType.LeaveVehicle, event: (vehicle: Vehicle) => void): void;
     static on(eventType: CharacterEventType.TakeDamage, event: (damage: number, bone: string) => void): void;

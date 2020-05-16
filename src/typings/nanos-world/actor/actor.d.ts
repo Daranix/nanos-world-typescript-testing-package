@@ -30,6 +30,7 @@ declare class Actor implements Rotable, Localizable, Collisionable {
     Destroy(): void;
     IsValid(): boolean;
 
+    AttachTo(actor: Actor, vector: Vector): void;
 
     static on(eventType: ActorEventType, event: (entity: Actor) => void): void
     on(eventType: ActorEventType, event: () => void): void;

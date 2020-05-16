@@ -1,6 +1,6 @@
 declare const enum CharacterEventType {
-    PickUpItem = 'PickUpItem',
-    DropItem = 'DropItem',
+    PickUp = 'PickUp',
+    Drop = 'Drop',
     GrabProp = 'GrabProp',
     UnGrabProp = 'UnGrabProp',
     EnterVehicle = 'EnterVehicle',

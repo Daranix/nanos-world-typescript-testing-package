@@ -10,3 +10,4 @@ import './server';
 import './vehicle';
 import './weapon';
 import './package';
+import './events';
