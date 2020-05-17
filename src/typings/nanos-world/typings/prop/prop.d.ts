@@ -16,5 +16,5 @@ declare class Prop extends Actor implements Pickable {
     static on(eventType: ActorEventType | PropEventType, event: (entity: Prop) => void): void;
     static on(eventType: PropEventType.GRAB | PropEventType.UNGRAB, event: (prop: Prop, character: Character) => void): void;
     on(eventType: ActorEventType | PropEventType, event: () => void): void;
-    on(eventType: PropEventType.GRAB | PropEventType.UNGRAB, event: (character: Character) => void): void;
+    on(eventType: PropEventType.GRAB | PropEventType.UNGRAB, event: (character: Character) => void): void; // Test
 }
