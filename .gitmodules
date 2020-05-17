@@ -1,3 +1,3 @@
 [submodule "src/typings/nanos-world-typescript"]
 	path = src/typings/nanos-world-typescript
-	url = https://github.com/Daranix/nanos-world-typescript
+	url = https://github.com/Daranix/nanos-world-typescript.git
