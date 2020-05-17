@@ -1,2 +1,0 @@
-import './grenade';
-import './grenadeeventtype';

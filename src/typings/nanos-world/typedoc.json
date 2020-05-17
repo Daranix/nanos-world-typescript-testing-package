@@ -1,9 +1,0 @@
-{
-    "inputFiles": ["./src/typings"],
-    "mode": "file",
-    "out": "docs",
-    "includeDeclarations": true,
-    "excludeExternals": true,
-    "plugin": [],
-    "exclude": ["server/**/*", "client/**/*", "shared/**/*"]
-}
