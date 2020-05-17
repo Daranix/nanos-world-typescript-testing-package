@@ -1,1 +1,1 @@
-import './nanos-world'
+import './nanos-world-typescript'
