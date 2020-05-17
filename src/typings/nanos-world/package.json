@@ -1,0 +1,17 @@
+{
+  "name": "nanos-world-types",
+  "version": "0.14.0",
+  "description": "Nanos world typings",
+  "scripts": {
+    "generate:docs": "typedoc --options ./typedoc.json"
+  },
+  "files": [
+    "**/*.d.ts"
+  ],
+  "author": "Daranix",
+  "license": "MIT",
+  "devDependencies": {
+    "typedoc": "^0.17.4",
+    "typescript-to-lua": "^0.33.0"
+  }
+}

@@ -1,0 +1,7 @@
+dist
+/client
+/server
+/shared
+lualib_bundle.lua
+node_modules
+/docs
