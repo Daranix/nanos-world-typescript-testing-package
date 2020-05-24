@@ -13,7 +13,7 @@
   },
   "tstl": {
     "luaTarget": "5.3",
-    "sourceMapTraceback": false,
+    "sourceMapTraceback": true,
     "luaLibImport": "require",
   }
 }

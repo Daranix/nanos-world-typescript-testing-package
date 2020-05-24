@@ -255,6 +255,7 @@ class ButtonElement extends UIElement {
             if (keyName === "LeftMouseButton") {
                 // const vector = new Vector2D(mouseX, mouseY);
                 if (this.handler && this.insertsectWith(Client.GetMousePosition())) {
+                    Package.Log("Intersected with: " + this.id);
                     this.handler(this);
                 }
             }
@@ -270,19 +271,6 @@ class ButtonElement extends UIElement {
         return this.box.insertsectWith(vector);
     }
 }
-
-/*
-on(ClientEventType.MouseDown, (keyName, mouseX, mouseY) => {
-    Package.Log("Pressed mouse key: " + keyName + " position: X " + Client.GetMousePosition().X + " Y " + Client.GetMousePosition().Y);
-    if (keyName === "LeftMouseButton") {
-        // const vector = new Vector2D(mouseX, mouseY);
-        for (const uielement of UIManager.uiElements) {
-            if (uielement.insertsectWith(Client.GetMousePosition())) {
-                Package.Log("Click intersected with " + uielement.id + " (g: " + uielement.group + ")");
-            }
-        }
-    }
-});*/
 
 on(ClientEventType.KeyDown, (keyName) => {
     Package.Log("Pressed key " + keyName);
@@ -329,7 +317,11 @@ drawBox.renderElement();*/
 
 const button = new ButtonElement("btn", "Test Button", new Vector2D(200, 200), (btn) => {
     Package.Log("Hey you pressed mee !! ");
+    const player = NanosWorld.GetLocalPlayer();
+    Events.CallRemote("printPing", [player]);
 });
+
+
 
 button.renderElement();
 
