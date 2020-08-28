@@ -250,7 +250,7 @@ class ButtonElement extends UIElement {
         this.textElement = new TextElement(id, btnText, textPosition, fontType, fontSize, new Color(255, 255, 255, 1), 0, true, true, false, new Vector2D(0, 0), new Color(0, 0, 0, 1), false, new Color(0, 0, 0, 1));
         this.box = new BoxElement(id, position, endPosition, 0, new Color(0, 0, 0, 1));
 
-        on(ClientEventType.MouseDown, (keyName, mouseX, mouseY) => {
+        Client.on(ClientEventType.MouseDown, (keyName, mouseX, mouseY) => {
             Package.Log("Pressed mouse key: " + keyName + " position: X " + Client.GetMousePosition().X + " Y " + Client.GetMousePosition().Y);
             if (keyName === "LeftMouseButton") {
                 // const vector = new Vector2D(mouseX, mouseY);
@@ -272,7 +272,7 @@ class ButtonElement extends UIElement {
     }
 }
 
-on(ClientEventType.KeyDown, (keyName) => {
+Client.on(ClientEventType.KeyDown, (keyName) => {
     Package.Log("Pressed key " + keyName);
     if (keyName === "T") {
         Client.SetMouseEnabled(!Client.IsMouseEnabled());

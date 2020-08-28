@@ -1,5 +1,5 @@
 // tslint:disable-next-line: no-namespace
-/** @noSelf **/
+/** @noSelfInFile **/
 declare namespace NanosWorldWeapons {
     function AK47(location: Vector, rotation: Rotator): Weapon;
     function AK74U(location: Vector, rotation: Rotator): Weapon;
