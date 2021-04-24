@@ -1,3 +1,5 @@
+import { testMessage } from "./import_test_message";
+
 Package.RequirePackage("nanos-world-weapons");
 
 
@@ -157,7 +159,8 @@ const startLocations = [
 
 
 Server.on(ServerEventType.START, () => {
-    console.log("Server started !! ");
+	console.log("Server started !! ");
+	console.log("Test message: " + testMessage);
 });
 
 Player.on(PlayerEventType.Spawn, (player) => {
@@ -178,4 +181,4 @@ Player.on(PlayerEventType.UNPOSSESS, (player, character, bIsPlayerDisconnecting)
 Events.on("printPing", (player: Player) => {
     Package.Log("Call from remote");
     Package.Log("Player ping is: " + player.GetPing());
-})
+});

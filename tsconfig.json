@@ -14,6 +14,7 @@
   "tstl": {
     "luaTarget": "5.3",
     "sourceMapTraceback": true,
+    "noHeader": true,
     "luaLibImport": "inline",
   }
 }
